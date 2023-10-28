@@ -1,0 +1,42 @@
+.token-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    outline: 1px solid #fff3;
+    border-radius: 0.5rem;
+    padding: 0.5em;
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 0.3em;
+        font-size: 0.8em;
+
+        img {
+            width: 1.2em;
+        }
+
+        h2 {
+            font-size: 0.9em;
+        }
+    }
+
+    p {
+        font-size: 0.4em;
+        font-weight: 400;
+
+        &:nth-of-type(2) {
+            color: var(--clr-neutral-200);
+            font-size: 0.35em;
+        }
+    }
+
+    button {
+        font-size: 0.5em;
+        font-weight: 400;
+
+        &:nth-child(1) {
+            padding-block: 0.4em;
+        }
+    }
+}

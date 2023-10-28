@@ -1,0 +1,45 @@
+.dashboard {
+    display: grid;
+    gap: 1em;
+    padding: 1em;
+    font-family: "Poppins", sasn-serif;
+
+    & > section {
+        .heading-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 0.3em;
+    
+            h1 {
+                font-weight: 600;
+                font-size: 1.1em;
+            }
+    
+            img {
+                width: 0.8em;
+            }
+        }
+
+        p {
+            font-size: 0.38em;
+            color: var(--clr-neutral-400);
+        }
+    }
+
+    .table-wrapper {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        align-items: start;
+        gap: 0.5em;
+    }
+
+    .coins-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 0.5em;
+
+        @media (min-width: 60rem) {
+            display: none;
+        }
+    }
+}

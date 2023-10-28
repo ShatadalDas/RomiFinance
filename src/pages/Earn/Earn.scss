@@ -1,0 +1,36 @@
+.earn {
+    font-family: "Poppins", sans-serif;
+    display: grid;
+    gap: 2em;
+    padding: 1em;
+
+    .btn-wrapper {
+        display: flex;
+        gap: 1em;
+        font-size: min(0.9em, 0.75rem);
+    }
+
+    & > section {
+        h2 {
+            font-size: 0.8em;
+            font-weight: 500;
+        }
+
+        p {
+            color: var(--clr-neutral-400);
+            font-size: 0.3em;
+            letter-spacing: 0.05rem;
+        }
+
+        .table-wrapper {
+            display: grid;
+            gap: 0.5em;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            align-items: start;
+
+            & > * {
+                height: max-content;
+            }
+        }
+    }
+}

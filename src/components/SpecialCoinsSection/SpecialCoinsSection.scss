@@ -1,0 +1,91 @@
+.special-coins-section {
+    --_border: 1px solid #fff3;
+
+    font-size: 0.35em;
+    text-align: left;
+    border: var(--_border);
+    letter-spacing: 0.05rem;
+    background-color: hsl(0, 0%, 8%);
+    border-radius: 0.3rem;
+    padding: 1em 0;
+    
+    & > tr > th {
+        font-size: 1.2em;
+        padding-block-end: 1em;
+        padding-inline: 1em;
+        border-bottom: var(--_border);        
+        display: flex;
+        gap: 0.6em;
+        align-items: center;
+        font-weight: 500;
+
+        img {
+            width: 1.3em;
+        }
+    }
+    
+    table {
+        width: 100%;
+        padding-inline: 1em;
+        
+        th {
+            padding-block-start: 1em;
+            color: var(--clr-neutral-200);
+            font-weight: 500;
+            &:last-child {
+                text-align: right;
+            }
+        }
+
+        td {
+            margin-block-start: 1em;
+            font-weight: 500;
+
+            img {
+                --_size: 2.5em;
+                height: var(--_size);
+                width: var(--_size);
+            }
+
+            &:nth-child(1) {
+                width: 30%;
+                display: flex;
+                gap: 0.6em;
+                align-items: center;
+
+                p:first-of-type {
+                    font-size: 1em;
+                    white-space: nowrap;
+                }
+                p:last-of-type {
+                    font-size: 0.8em;
+                    color: var(--clr-neutral-200);
+                }
+            }
+            &:nth-child(2) {
+                width: 20%;
+            }
+            &:nth-child(3) {
+                width: 10%;
+            }
+            &:nth-child(4) {
+                width: 20%;
+            }
+            &:nth-child(5) {
+                width: 20%;
+                text-align: right;
+            }
+        }
+    }
+
+    .down-arrow {
+        width: 1em;
+        height: 1.5em;
+        align-self: flex-start;
+        cursor: pointer;
+    }
+
+    @media (max-width: 60.00000000000001rem) {
+        display: none;
+    }
+}

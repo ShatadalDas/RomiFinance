@@ -1,0 +1,167 @@
+.home {
+    display: grid;
+    gap: 3em;
+    font-family: "Poppins", sans-serif;
+    padding-inline: 1em;
+    margin-block-end: 3em;
+
+    .title-section {
+        display: grid;
+        gap: 0.8em;
+        width: 100%;
+        max-width: 45rem;
+        padding-block-start: 3em;
+
+        h1 {
+            font-weight: 600;
+            font-size: 1.2em;
+            line-height: 1;
+        }
+
+        p {
+            font-size: 0.5em;
+            color: var(--clr-neutral-300);
+            width: 80%;
+        }
+
+        button {
+            font-size: 0.4em;
+        }
+    }
+
+    .info-section {
+        display: grid;
+        gap: 1em;
+        font-size: 0.7em;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+        padding-block-end: 3em;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: -50%;
+            right: -50%;
+            height: 1px;
+            background-color: var(--clr-neutral-100);
+            opacity: 0.4;
+        }
+
+        section {
+            display: flex;
+            gap: 1em;
+            align-items: center;
+            padding: 1.2em 1em;
+            border: 0.01em solid #fff3;
+            border-radius: 0.2rem;
+            background-color: hsl(0, 0%, 9%);
+
+            h1 {
+                font-size: 0.6em;
+                color: var(--clr-neutral-500);
+            }
+
+            p {
+                font-size: 1.3em;
+            }
+
+            img {
+                width: 2em;
+            }
+        }
+    }
+
+    .benifits-section {
+        display: grid;
+        gap: 2em;
+        font-size: 0.7em;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+        section {
+            max-width: 25rem;
+
+            div {
+                display: flex;
+                align-items: center;
+                margin-block-end: 0.5em;
+                gap: 0.3em;
+
+                h1 {
+                    font-size: 0.9em;
+                    font-weight: 500;
+                }
+
+                img {
+                    width: 1.3em;
+                }
+            }
+
+            p {
+                font-size: 0.65em;
+                word-spacing: 2px;
+                color: var(--clr-neutral-500);
+            }
+        }
+    }
+
+    .token-card-section {
+        font-weight: 600;
+
+        h1 {
+            font-size: 1.1em;
+            margin-block-end: 1em;
+        }
+
+        div {
+            display: grid;
+            gap: 1em;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+
+            section {
+                display: flex;
+                flex-direction: column;
+                gap: 0.5em;
+                border: 1px solid #fff3;
+                border-radius: 0.5rem;
+                padding: 0.5em;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    gap: 0.3em;
+                    font-size: 0.8em;
+
+                    img {
+                        width: 1.2em;
+                    }
+
+                    h2 {
+                        font-size: 0.9em;
+                    }
+                }
+
+                p {
+                    font-size: 0.4em;
+                    font-weight: 400;
+
+                    &:nth-of-type(2) {
+                        color: var(--clr-neutral-200);
+                        font-size: 0.35em;
+                    }
+                }
+
+                button {
+                    font-size: 0.5em;
+                    font-weight: 400;
+
+                    &:nth-child(1) {
+                        padding-block: 0.4em;
+                    }
+                }
+            }
+        }
+    }
+
+}

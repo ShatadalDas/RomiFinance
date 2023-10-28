@@ -1,0 +1,78 @@
+.table {
+    --_border: 1.2px solid #fff4;
+
+    font-size: 0.35em;
+    background-color: hsl(0, 0%, 8%);
+    border: var(--_border);
+    margin-block-start: 2em;
+    border-radius: 0.3rem;
+    text-align: left;
+    letter-spacing: 0.05rem;
+    min-width: 100%;
+
+    th {
+        padding: 1em;
+        border-bottom: var(--_border);
+        font-weight: 500;
+        display: flex;
+        gap: 0.7em;
+        align-items: center;
+
+        img {
+            width: 3.5em;
+            height: 3.5em;
+        }
+
+        .down-arrow {
+            width: 1.3em;
+            height: 1.8em;
+            align-self: flex-start;
+            cursor: pointer;
+        }
+
+        div p:nth-child(1) {
+            font-size: 1.3em;
+            color: var(--clr-neutral-900);
+        }
+        div p:nth-child(2) {
+            font-size: 0.9em;
+        }
+    }
+
+    table {
+        padding-inline: 1em;
+        width: 100%;
+        padding-block: 0.5em 1em;
+        border-collapse: separate;
+        border-spacing: 0 0.6em;
+        
+        &:not(:last-of-type) {
+            border-bottom: var(--_border);
+        }
+
+        tr :first-of-type {
+            color: var(--clr-neutral-400);
+        }
+
+        tr :last-of-type {
+            text-align: right;
+            font-weight: 500;
+        }
+    }
+    &.coin {
+        margin-block-start: 3em;
+        p {
+            font-size: 1.5em;
+            color: var(--clr-neutral-900);
+        }
+        img {
+            width: 2em;
+            height: 2em;
+        }
+        .down-arrow {
+            width: 1em;
+            height: 2em;
+            cursor: pointer;
+        }
+    }
+}
