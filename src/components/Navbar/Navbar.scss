@@ -74,11 +74,7 @@
         font-weight: 500;
         letter-spacing: 0.05em;
 
-        @media (max-width: 30rem) {
-            font-size: 0.37em;
-        }
-
-        @media (min-width: 10rem) {
+        @media (min-width: 10rem) and (max-width: 30rem) {
             font-size: 0.34em;
         }
 
