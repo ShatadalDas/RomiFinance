@@ -2,14 +2,18 @@
     display: grid;
     gap: 3em;
     font-family: "Poppins", sans-serif;
-    padding-inline: 1em;
     margin-block-end: 3em;
+    
+    & > section {
+        padding-inline: 1em;
+
+    }
 
     .title-section {
         display: grid;
         gap: 0.8em;
         width: 100%;
-        max-width: 35rem;
+        max-width: 40rem;
         padding-block-start: 3em;
 
         h1 {
@@ -35,19 +39,20 @@
         font-size: 0.7em;
         grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
 
-        padding-block-end: 3em;
-        position: relative;
+        // padding-block-end: 3em;
 
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: -50%;
-            right: -50%;
-            height: 1px;
-            background-color: var(--clr-neutral-100);
-            opacity: 0.4;
-        }
+        // position: relative;
+
+        // &::after {
+        //     content: "";
+            // position: absolute;
+            // bottom: 0;
+            // left: -50%;
+            // right: -50%;
+            // height: 1px;
+            // background-color: var(--clr-neutral-100);
+            // opacity: 0.4;
+        // }
 
         section {
             display: flex;
@@ -78,6 +83,8 @@
         gap: 2em;
         font-size: 0.7em;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        border-top: 2px solid #fff3;
+        padding-block-start: 4em;
 
         section {
             max-width: 25rem;

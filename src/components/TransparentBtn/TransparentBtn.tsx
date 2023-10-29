@@ -10,7 +10,7 @@ interface Props {
 
 function TransparentBtn({ children, className, link }: Props) {
     return (
-        <Link to={link ? link : "/"}>
+        <Link to={link ? link : "/RomiFinance"}>
             <button className={ "btn-transparent" + " " + className }>
                 { children }
             </button>
