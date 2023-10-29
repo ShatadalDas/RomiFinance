@@ -2,6 +2,7 @@
     display: flex;
     box-shadow: 0 0.001em 0.2em var(--clr-primary-950);
     width: 100vw;
+    width: 100dvw;
     overflow-x: hidden;
 
     .menuIcon {
@@ -75,6 +76,10 @@
 
         @media (max-width: 30rem) {
             font-size: 0.37em;
+        }
+
+        @media (min-width: 10rem) {
+            font-size: 0.34em;
         }
 
         .network {
