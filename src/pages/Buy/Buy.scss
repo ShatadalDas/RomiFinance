@@ -1,0 +1,16 @@
+.buy {
+    font-family: "Poppins", sans-serif;
+    padding: 1em;
+    display: grid;
+    gap: 1em;
+
+    h2 {
+        font-weight: 500;
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 0.5em;
+    }
+}

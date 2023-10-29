@@ -1,8 +1,6 @@
 .header {
     display: flex;
     box-shadow: 0 0.001em 0.2em var(--clr-primary-950);
-    width: 100vw;
-    width: 100dvw;
     overflow-x: hidden;
 
     .menuIcon {
@@ -10,7 +8,7 @@
         width: 0.8em;
         cursor: pointer;
 
-        @media (min-width: 60em) {
+        @media (min-width: 70em) {
             display: none;
         }
     }
@@ -54,7 +52,7 @@
         gap: 0.95em;
         color: var(--clr-neutral-200);
 
-        @media (max-width: 60em) {
+        @media (max-width: 70em) {
             display: none;
         }
 
@@ -68,15 +66,12 @@
     }
 
     .button-wrapper {
-        font-size: 0.3em;
+        font-size: min(0.34em, 0.75rem);
         gap: 1em;
         font-family: "Poppins", sans-serif;
         font-weight: 500;
         letter-spacing: 0.05em;
 
-        @media (min-width: 10rem) and (max-width: 30rem) {
-            font-size: 0.34em;
-        }
 
         .network {
             gap: 0.2em;
@@ -121,7 +116,7 @@
     transition: left 100ms ease;
     box-shadow: 0.2em 0 0.5em #00000085;
 
-    @media (min-width: 60em) {
+    @media (min-width: 70em) {
         display: none;
     }
 
