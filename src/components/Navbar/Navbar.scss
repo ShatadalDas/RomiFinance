@@ -1,6 +1,8 @@
 .header {
     display: flex;
     box-shadow: 0 0.001em 0.2em var(--clr-primary-950);
+    width: 100vw;
+    overflow-x: hidden;
 
     .menuIcon {
         margin-inline-start: 0.5em;
