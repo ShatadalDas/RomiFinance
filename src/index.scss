@@ -60,8 +60,8 @@ body {
     color: var(--clr-neutral-900);
     overflow-x: hidden;
     max-width: 3000px;
+    width: 100vw;
     min-height: 100vh;
-    min-height: 100dvh;
     margin-inline: auto;
     font-size: min(2.5rem, max(calc(5vw + 0.1rem), 1.4rem));
     isolation: isolate;
