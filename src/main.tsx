@@ -4,7 +4,7 @@ import Home from './pages/Home/Home.tsx'
 import './index.scss'
 import App from './App.tsx'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
-import { Buy, Dashboard, Earn, Ecosystem, pages } from './pages'
+import { Buy, Dashboard, Earn, Ecosystem, pages, Referrals } from './pages'
 
 
 const router = createBrowserRouter([
@@ -27,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: pages[4],
         element: <Buy />
+      },
+      {
+        path: pages[5],
+        element: <Referrals />
       },
       {
         path: pages[6],
